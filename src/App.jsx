@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
-import Prodotti from './pages/Contacts'
-import ChiSiamo from './pages/About'
+import Prodotti from './pages/Prodotti'
+import ChiSiamo from './pages/ChiSiamo'
 
 function App() {
   //mi creo la variabile di stato  ( stato=currentPage | aggiorna valore=setCurrentPage | "home"=valore iniziale di stato)

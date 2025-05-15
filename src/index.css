@@ -1,0 +1,8 @@
+/* `per visualizzare active sui link con font-weight */
+.nav-link:hover {
+    font-weight: 800;
+}
+
+.nav-link.active {
+    font-weight: 800;
+}

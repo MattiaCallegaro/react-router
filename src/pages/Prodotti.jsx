@@ -30,9 +30,9 @@ const Prodotti = () => {
                         return (
                             <div className="col-12 col-md-4  " key={products.id}>
 
-                                <div className="card h-100 border-secondary">
-                                    <div className="card-image-top">
-                                        <img src={product.image} alt="" className='img-fluid' />
+                                <div className="card h-100 text-center border border-secondary">
+                                    <div className="card-image-top mx-auto">
+                                        <img src={product.image} alt="" className='img-fluid' style={{ height: '150px', width: 'auto', objectFit: 'contain' }} />
                                     </div>
                                     <div className="card-body">
                                         <h3>{product.title}</h3>

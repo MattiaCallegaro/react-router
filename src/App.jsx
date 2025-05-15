@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
-import About from './pages/About'
-import Contacts from './pages/Contacts'
+import Prodotti from './pages/Contacts'
+import ChiSiamo from './pages/About'
 
 function App() {
   //mi creo la variabile di stato  ( stato=currentPage | aggiorna valore=setCurrentPage | "home"=valore iniziale di stato)
@@ -11,11 +11,12 @@ function App() {
 
   return (
     <>
+      {/* `Definisco le rotte */}
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={HomePage}></Route>
-          <Route path='/about' Component={About}></Route>
-          <Route path='/contacts' Component={Contacts}></Route>
+          <Route path='/Chi-siamo' Component={ChiSiamo}></Route>
+          <Route path='/Prodotti' Component={Prodotti}></Route>
         </Routes>
       </BrowserRouter>
 

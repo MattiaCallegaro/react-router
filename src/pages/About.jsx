@@ -1,9 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import MainNavbar from '../components/MainNavbar'
 
-const About = () => {
+const ChiSiamo = () => {
     return (
-        <h1>About</h1>
+        <MainNavbar />
     )
 }
 
-export default About
+export default ChiSiamo

@@ -1,9 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import MainNavbar from '../components/MainNavbar'
 
-const Contacts = () => {
+const Prodotti = () => {
     return (
-        <h1>Contacts</h1>
+        < MainNavbar />
     )
 }
 
-export default Contacts
+export default Prodotti

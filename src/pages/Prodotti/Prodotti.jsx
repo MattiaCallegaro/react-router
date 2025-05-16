@@ -2,6 +2,7 @@
 
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 const Prodotti = () => {
@@ -28,20 +29,23 @@ const Prodotti = () => {
                 <div className="row g-4  ">
                     {products.map((product) => {
                         return (
-                            <div className="col-12 col-md-4  " key={products.id}>
 
-                                <div className="card h-100 text-center border border-secondary">
-                                    <div className="card-image-top mx-auto">
-                                        <img src={product.image} alt="" className='img-fluid' style={{ height: '150px', width: 'auto', objectFit: 'contain' }} />
+                            <div className="col-12 col-md-4  " key={products.id}>
+                                <NavLink className={"prodotti-link"} to={`/products/${product.id}`}>
+                                    <div className="card h-100 text-center border border-secondary">
+                                        <div className="card-image-top mx-auto">
+                                            <img src={product.image} alt="" className='img-fluid' style={{ height: '150px', width: 'auto', objectFit: 'contain' }} />
+                                        </div>
+                                        <div className="card-body">
+                                            <h3>{product.title}</h3>
+                                            <p>{product.category}</p>
+                                            <p>{product.description}</p>
+                                            <p>{product.price} $</p>
+                                        </div>
                                     </div>
-                                    <div className="card-body">
-                                        <h3>{product.title}</h3>
-                                        <p>{product.category}</p>
-                                        <p>{product.description}</p>
-                                        <p>{product.price} $</p>
-                                    </div>
-                                </div>
+                                </NavLink>
                             </div>
+
                         )
                     })}
 

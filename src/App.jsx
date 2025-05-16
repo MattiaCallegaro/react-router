@@ -6,6 +6,7 @@ import Prodotti from './pages/Prodotti/Prodotti'
 import ChiSiamo from './pages/ChiSiamo'
 //importo layout per utilizzare outlet
 import DefaultLayout from './layouts/DefaultLayout'
+import Prodotto from './pages/Prodotti/Prodotto'
 
 function App() {
   //mi creo la variabile di stato  ( stato=currentPage | aggiorna valore=setCurrentPage | "home"=valore iniziale di stato)
@@ -21,6 +22,7 @@ function App() {
             <Route path='/Chi-siamo' Component={ChiSiamo}></Route>
             <Route path='/Prodotti' >
               <Route index Component={Prodotti} />
+              <Route path=":id" Component={Prodotto} />
             </Route>
           </Route>
         </Routes>

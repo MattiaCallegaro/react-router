@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 //mi creo una nuova componente per avere il codice di navbar solo qui per ottimizzare 
 const MainNavbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid justify-content-center ">
                 <div className="row ">
                     <div className="col-12 text-center my-3">
@@ -13,7 +13,7 @@ const MainNavbar = () => {
                         <div className="navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav w-100 gap-5 my-1">
                                 <li className="nav-item ">
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" className="btn btn-primary">
                                         <NavLink to="/" className="nav-link">Home</NavLink>
                                     </button>
                                 </li>
@@ -24,7 +24,7 @@ const MainNavbar = () => {
                                 </li>
                                 <li className="nav-item">
                                     <button type="button" className="btn btn-primary">
-                                        <NavLink to="/prodotti" className="nav-link" >Prodotti</NavLink>
+                                        <NavLink to="/products" className="nav-link" >Prodotti</NavLink>
                                     </button>
                                 </li>
                             </ul>

@@ -2,6 +2,7 @@
 
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+
 import { NavLink } from 'react-router-dom'
 
 
@@ -37,7 +38,7 @@ const Prodotti = () => {
                                             <img src={product.image} alt="" className='img-fluid' style={{ height: '150px', width: 'auto', objectFit: 'contain' }} />
                                         </div>
                                         <div className="card-body">
-                                            <h3>{product.title}</h3>
+                                            <h4>{product.title}</h4>
                                             <p>{product.category}</p>
                                             <p>{product.description}</p>
                                             <p>{product.price} $</p>

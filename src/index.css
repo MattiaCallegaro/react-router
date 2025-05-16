@@ -24,4 +24,14 @@
 
 .card:hover {
     transform: scale(1.05);
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(233, 232, 232);
+}
+
+nav {
+    background-color: rgb(214, 214, 214);
+
 }

@@ -19,9 +19,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route Component={DefaultLayout}>
-            <Route path='/' Component={HomePage}></Route>
-            <Route path='/Chi-siamo' Component={ChiSiamo}></Route>
-            <Route path='/Prodotti' >
+            <Route path='/' Component={HomePage} />
+            <Route path='/Chi-siamo' Component={ChiSiamo} />
+            <Route path='/products' >
               <Route index Component={Prodotti} />
               <Route path=":id" Component={Prodotto} />
             </Route>

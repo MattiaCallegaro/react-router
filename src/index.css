@@ -9,4 +9,19 @@
 
 .prodotti-link {
     text-decoration: none;
+    transition: transform 0.3s ease;
+
+}
+
+.prodotti-link:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    width: 18rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }

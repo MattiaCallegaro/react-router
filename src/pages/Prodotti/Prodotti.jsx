@@ -30,7 +30,7 @@ const Prodotti = () => {
                     {products.map((product) => {
                         return (
 
-                            <div className="col-12 col-md-4  " key={products.id}>
+                            <div className="col-12 col-md-4  " key={product.id}>
                                 <NavLink className={"prodotti-link"} to={`/products/${product.id}`}>
                                     <div className="card h-100 text-center border border-secondary">
                                         <div className="card-image-top mx-auto">

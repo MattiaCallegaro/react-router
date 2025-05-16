@@ -48,7 +48,7 @@ const Prodotto = () => {
                     > Indietro</button>
                     <button type="button" className="btn btn-primary" onClick={() => {
                         navigate(`/products/${parseInt(id) + 1}`)
-                    }}
+                    }} disabled={id == 20}
                     > Avanti</button>
                 </div>
             </div>

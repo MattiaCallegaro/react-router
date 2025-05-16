@@ -1,11 +1,11 @@
 
-import MainNavbar from '../components/MainNavbar'
+
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
 
 const Prodotti = () => {
-
+    //products è lo stato, setProducts è la funzione per aggiornarlo e useState([]) è il valore iniziale 
     const [products, setProducts] = useState([])
     //mi faccio la chiamata ajax direttamente all'apertuta della pagina
     useEffect(() => {
@@ -18,14 +18,14 @@ const Prodotti = () => {
 
     return (
         <>
-            <MainNavbar />
+
             <div className="container">
-                <div className="row">
-                    <div className="col-12">
+                <div className="row ">
+                    <div className="col-12 my-4 ">
                         <h1>Lista prodotti</h1>
                     </div>
                 </div>
-                <div className="row g-4 ">
+                <div className="row g-4  ">
                     {products.map((product) => {
                         return (
                             <div className="col-12 col-md-4  " key={products.id}>

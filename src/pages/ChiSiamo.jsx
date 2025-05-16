@@ -1,9 +1,19 @@
 import React from 'react'
-import MainNavbar from '../components/MainNavbar'
+
 
 const ChiSiamo = () => {
     return (
-        <MainNavbar />
+        <>
+
+            <div className="container">
+                <div className="row text-center my-5">
+                    <div className="col-12">
+                        <h1>Sgargiullo</h1>
+                    </div>
+                </div>
+            </div>
+
+        </>
     )
 }
 

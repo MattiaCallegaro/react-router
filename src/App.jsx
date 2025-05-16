@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
-import Prodotti from './pages/Prodotti'
+import Prodotti from './pages/Prodotti/Prodotti'
 import ChiSiamo from './pages/ChiSiamo'
 //importo layout per utilizzare outlet
 import DefaultLayout from './layouts/DefaultLayout'
@@ -19,7 +19,9 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route path='/' Component={HomePage}></Route>
             <Route path='/Chi-siamo' Component={ChiSiamo}></Route>
-            <Route path='/Prodotti' Component={Prodotti}></Route>
+            <Route path='/Prodotti' >
+              <Route index Component={Prodotti} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
